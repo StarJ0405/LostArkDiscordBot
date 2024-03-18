@@ -9,6 +9,24 @@ import java.util.List;
 import java.util.Objects;
 
 public class FileStore {
+    public String getToken() {
+        File file = new File("./TOKEN.config");
+        try {
+            if (file.exists()) {
+                BufferedReader reader = new BufferedReader(new FileReader(file));
+                String str;
+                while ((str = reader.readLine()) != null) {
+                    reader.close();
+                    return str;
+                }
+                reader.close();
+            }
+        } catch (IOException ex) {
+
+        }
+        return "";
+    }
+
     public void Load() {
         try {
             File file = new File("./data.xlsx");
@@ -30,8 +48,8 @@ public class FileStore {
             Workbook workbook = WorkbookFactory.create(Objects.requireNonNull(fileInputStream));
             // SETTING
             Sheet settingSheet = workbook.getSheet("SETTING");
-            JDA jda = MemoryStore.createJda(settingSheet.getRow(0).getCell(1).getStringCellValue());
-            MemoryStore.setMainTextChannelName(settingSheet.getRow(1).getCell(1).getStringCellValue());
+            JDA jda = MemoryStore.createJda(getToken());
+            MemoryStore.setMainTextChannelName(settingSheet.getRow(0).getCell(1).getStringCellValue());
             // REACTION
             Sheet reactionSheet = workbook.getSheet("REACTION");
             for (Row row : reactionSheet) {
@@ -40,7 +58,7 @@ public class FileStore {
                     if (cell.getCellType().equals(CellType.STRING))
                         list.add(cell.getStringCellValue());
                 if (list.size() > 1)
-                    MemoryStore.addReaction(list.get(0), list.subList(1, list.size()).toArray(String[]::new));
+                    MemoryStore.addReaction(list.get(0).replace(" ",""), list.subList(1, list.size()).toArray(String[]::new));
             }
 
             // RANDOM_REACTION

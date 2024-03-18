@@ -85,7 +85,7 @@ public class MessageStore {
             return new StringSelect(role.getName(), role.getId(), serverEmoji.getEmoji(guild), member.getRoles().contains(role));
         }
 
-        public static StringSelect getInfo(Guild guild, Info info, Member member) {
+        public static StringSelect getInfo(Info info) {
             return new StringSelect(info.name(), info.name());
         }
     }

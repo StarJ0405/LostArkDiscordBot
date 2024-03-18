@@ -7,6 +7,7 @@ import net.dv8tion.jda.api.entities.Role;
 import net.dv8tion.jda.api.events.interaction.component.ButtonInteractionEvent;
 import net.dv8tion.jda.api.events.interaction.component.StringSelectInteractionEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
+import net.dv8tion.jda.api.interactions.components.selections.SelectMenu;
 import net.dv8tion.jda.api.interactions.components.selections.SelectOption;
 import net.dv8tion.jda.api.interactions.components.selections.StringSelectMenu;
 import org.jetbrains.annotations.NotNull;
@@ -49,7 +50,7 @@ public class InteractionListener extends ListenerAdapter {
             case "info":{
                 List<MessageStore.StringSelect> list = new ArrayList<>();
                 for(Info info : Info.getCommander())
-                    list.add(MessageStore.StringSelect.getInfo(guild,info,member));
+                    list.add(MessageStore.StringSelect.getInfo(info));
                 StringSelectMenu commnaderMenu = MessageStore.getStringSelectMenu("commander","군단장 정보를 검색하기",list.toArray(MessageStore.StringSelect[]::new));
                 event.reply("").addActionRow(commnaderMenu).setEphemeral(true).queue();
             }
@@ -60,7 +61,8 @@ public class InteractionListener extends ListenerAdapter {
     @Override
     public void onStringSelectInteraction(StringSelectInteractionEvent event) {
         Guild guild = event.getGuild();
-        switch (Objects.requireNonNull(event.getSelectMenu().getId())) {
+        StringSelectMenu menu= event.getSelectMenu();
+        switch (Objects.requireNonNull(menu.getId())) {
             case "mainRole1":
             case "mainRole2":{
                 List<Role> roles = new ArrayList<>(Objects.requireNonNull(event.getMember()).getRoles());
@@ -103,11 +105,21 @@ public class InteractionListener extends ListenerAdapter {
             case "commander":{
                 SelectOption option = event.getSelectedOptions().get(0);
                 Info info = Info.valueOf(option.getValue());
-                event.reply("").addEmbeds(info.getEmbeds()).setEphemeral(true).queue();
+                event.reply("").addActionRow(info.getMenu()).setEphemeral(true).queue();
                 event.getMessage().delete().queue();
             }
             break;
             default:
+                try{
+                    Info info = Info.valueOf(menu.getId());
+                    if(info!=null){
+                        SelectOption option =event.getSelectedOptions().get(0);
+                        int number = Integer.valueOf(option.getValue());
+                        event.reply("").addEmbeds(info.getEmbeds()[number]).setEphemeral(true).queue();
+                    }
+                }catch(Exception ex){
+
+                }
                 break;
         }
     }
