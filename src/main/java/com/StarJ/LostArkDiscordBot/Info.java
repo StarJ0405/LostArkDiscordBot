@@ -89,28 +89,16 @@ public enum Info {
                     .addField("에스더(실리안, 아제나, 이난나)", "135줄 달리기 패턴이후 중간에 보스 조우 후 30초정도 뒤에 좌우로 바람을 날리는 패턴을 하는데 그때 히든 아제나 사용\n18줄 쫄몹 잡을때 실리안 사용\nㅤ", false)//
                     .addField("중요 기믹", "보스 등에게 검푸른색 피해를 받는 경우 짧은 시간동안 받는 피해가 증가함(스택 쌓임)\n- 디버프가 있는 상태로 하얀색 계통 피해를 받는 경우 그 자리에 터지는 작은 검은 구체가 발생하여 매우 큰 데미지를 유발(범위내 아군 전부 피해)\n135줄 이후 2페이즈 보스에게 도달하고 똥을 주는 일반 패턴이 있는데, 해당 똥이 일정 이상 쌓이면 전멸\n- 하얀색 구체를 구체를 주는 패턴에서 하얀 구체를 똥장판에서 터뜨릴시 똥 제거\n- 럴커 패턴으로 주변에 가시가 올라오고 보스 밑에 빨간색 장판이 생기며 크게 찍는데 이때 확정으로 생기는 똥들을 보스 밑에 깔경우 장판 제거\n- 단, 똥이 2개 겹치면 큰똥으로 바뀌는데 이것이 지우는 기믹으로 지울시 매우 큰 범위에 즉사급 데미지\nㅤ", false)//
                     .build(); //
-            MessageEmbed embed3 = new EmbedBuilder().setAuthor(this.name()) //
+            MessageEmbed embed3= new EmbedBuilder().setAuthor(this.name()) //
                     .setColor(Color.BLUE).setTitle(this.description) //
                     .setDescription("3관문 빛을 꺼트리는 자, 카멘") //
                     .setImage("https://i.imgur.com/hT2domt.png") //
                     .addField("배틀 아이템", "딜러) 물약 암수 성부 아드\n서폿) 물약 암수 파폭 각물\nㅤ", false)//
-                    .addField("패턴", "\nㅤ", false) //
-                    .addField("패턴", "\nㅤ", false) //
-                    .addField("패턴", "\nㅤ", false) //
-                    .addField("패턴", "\nㅤ", false) //
-                    .addField("에스더(실리안, 아제나, 이난나)", "\nㅤ", false)//
-                    .addField("중요 기믹", "\nㅤ", false)//동안 보스 데미지 감소\n공대원이 시야를 가려주면 데미지감소 제거 가능\n- 엔드로핀\n모든 공대원이 유기체 버프 1개 이상에 바훈투르 적용시 발동\n자기 체력 15줄을 실드로 전환하며 공대원이 25초 내 실드를 깍아야함\n모든 체력 기믹을 무시하고 딜을 넣을 수 있으며 실드 이후에도 버프가 남아있어 폭딜 가능\nㅤ", false)//
-                    .build(); //
-            MessageEmbed embed4 = new EmbedBuilder().setAuthor(this.name()) //
-                    .setColor(Color.BLUE).setTitle(this.description) //
-                    .setDescription("4관문 종말의 시(時), 카멘") //
-                    .setImage("https://i.imgur.com/4cJTRnb.png") //
-                    .addField("배틀 아이템", "딜러) 물약 암수 성부 아드\n서폿) 물약 암수 파폭 각물\nㅤ", false)//
-                    .addField("300줄 칼 무력 패턴", "\nㅤ", false) //
-                    .addField("275줄 알비온 패턴", "\nㅤ", false) //
-                    .addField("255줄 칼 소환 패턴", "\nㅤ", false) //
-                    .addField("225줄 안전지대 찾기 패턴(별칭 : 실리안)", "\nㅤ", false) //
-                    .addField("210줄 말타기 후 격돌 패턴", "\nㅤ", false) //
+                    .addField("300줄 칼 무력 패턴", "멀리 있는 카멘이 손든쪽 안전, 바닥 장판 모양에 맞춰 안전지대 숙지 필요\n칼/첫장판 맞으면 치명상피해\n- 무력 실패시 전멸\nㅤ", false) //
+                    .addField("275줄 알비온 패턴", "가운데로 이동 후 카멘이 워킹\n검은 안개 나오면 스페로 넘어가기\n이후 빨간 장판 피하기 3종류\n- ABBB, AABB, 따라라 중중, 따라라 제자리 총 4종류\nㅤ", false) //
+                    .addField("255줄 칼 소환 패턴", "가운데에서 칼 소환 후 어글자 빨강/파랑 장판 3번 이후 칼잡기\n어글자에게 빨강/파랑 두개 다 어글자 한명\n- 11시로 칼 어그로 유지\n- 칼은 패턴 대략 3번 후 카운터 사용, 카운터 후 무력 단, 2번연속은 무력 불가\n- 칼 잡은 후 강화패턴 시작\nㅤ", false) //
+                    .addField("225줄 안전지대 찾기 패턴(별칭 : 실리안)", "실리안 대사 후 가운데로 이동하며 검은 안개가 나오면 스페로 피하기\n이후 안전지대를 찾아서기, 부동산 사기 주의!!\nㅤ", false) //
+                    .addField("210줄 말타기 후 격돌 패턴", "컷신 이후 카멘을 등을 따라 최대한 멀리 이동 앞으로 나가면 검기에 맞음 주의\n헤드에서 G키를 누르면 1격 시작\nㅤ", false) //
                     .addField("쉴드제거 패턴", "\nㅤ", false) //
                     .addField("1지파 패턴", "\nㅤ", false) //
                     .addField("2지파 패턴", "\nㅤ", false) //
@@ -119,6 +107,18 @@ public enum Info {
                     .addField("35줄 마지막 격돌 패턴", "\nㅤ", false) //
                     .addField("에스더(실리안, 아제나, 이난나)", "\nㅤ", false)//
                     .addField("중요 기믹", "\nㅤ", false)//
+                    .build(); //
+            MessageEmbed embed4  = new EmbedBuilder().setAuthor(this.name()) //
+                    .setColor(Color.BLUE).setTitle(this.description) //
+                    .setDescription("4관문 종말의 시(時), 카멘") //
+                    .setImage("https://i.imgur.com/hT2domt.png") //
+                    .addField("배틀 아이템", "딜러) 물약 암수 성부 아드\n서폿) 물약 암수 파폭 각물\nㅤ", false)//
+                    .addField("패턴", "\nㅤ", false) //
+                    .addField("패턴", "\nㅤ", false) //
+                    .addField("패턴", "\nㅤ", false) //
+                    .addField("패턴", "\nㅤ", false) //
+                    .addField("에스더(실리안, 아제나, 이난나)", "\nㅤ", false)//
+                    .addField("중요 기믹", "\nㅤ", false)//동안 보스 데미지 감소\n공대원이 시야를 가려주면 데미지감소 제거 가능\n- 엔드로핀\n모든 공대원이 유기체 버프 1개 이상에 바훈투르 적용시 발동\n자기 체력 15줄을 실드로 전환하며 공대원이 25초 내 실드를 깍아야함\n모든 체력 기믹을 무시하고 딜을 넣을 수 있으며 실드 이후에도 버프가 남아있어 폭딜 가능\nㅤ", false)//
                     .build(); //
             return new MessageEmbed[]{embed1, embed2, embed3, embed4};
         }

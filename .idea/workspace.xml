@@ -10,29 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb3a6309-541d-4049-86d7-6222431633d1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/LostArkDiscordBot_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/StarJ/LostArkDiscordBot/DataStore/FileStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/StarJ/LostArkDiscordBot/DataStore/MemoryStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/StarJ/LostArkDiscordBot/Info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/StarJ/LostArkDiscordBot/JobEmoji.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/StarJ/LostArkDiscordBot/JobType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/StarJ/LostArkDiscordBot/Listeners/InteractionListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/StarJ/LostArkDiscordBot/Listeners/JoinListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/StarJ/LostArkDiscordBot/Listeners/MessageListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/StarJ/LostArkDiscordBot/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/StarJ/LostArkDiscordBot/MessageStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/StarJ/LostArkDiscordBot/ServerEmoji.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataStore/FileStore.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataStore/MemoryStore.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Listeners/JoinListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Listeners/MessageListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/StarJ/LostArkDiscordBot/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/StarJ/LostArkDiscordBot/Info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,12 +117,12 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/StarJ/LostArkDiscordBot/Listeners/InteractionListener.java</url>
-          <line>45</line>
+          <line>46</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/StarJ/LostArkDiscordBot/Listeners/InteractionListener.java</url>
-          <line>23</line>
+          <line>24</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
