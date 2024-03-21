@@ -7,7 +7,6 @@ import net.dv8tion.jda.api.entities.Role;
 import net.dv8tion.jda.api.events.interaction.component.ButtonInteractionEvent;
 import net.dv8tion.jda.api.events.interaction.component.StringSelectInteractionEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
-import net.dv8tion.jda.api.interactions.components.selections.SelectMenu;
 import net.dv8tion.jda.api.interactions.components.selections.SelectOption;
 import net.dv8tion.jda.api.interactions.components.selections.StringSelectMenu;
 import org.jetbrains.annotations.NotNull;
@@ -116,6 +115,7 @@ public class InteractionListener extends ListenerAdapter {
                         SelectOption option =event.getSelectedOptions().get(0);
                         int number = Integer.valueOf(option.getValue());
                         event.reply("").addEmbeds(info.getEmbeds()[number]).setEphemeral(true).queue();
+                        event.getMessage().delete().queue();
                     }
                 }catch(Exception ex){
 
