@@ -128,12 +128,6 @@
           <line>23</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/main/java/com/StarJ/LostArkDiscordBot/Info.java</url>
-          <line>27</line>
-          <properties field="비아키스" class="com.StarJ.LostArkDiscordBot.Info" />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

@@ -16,34 +16,172 @@ public enum Info {
     발탄(Color.blue, "부활한 마수의 심장", "노말 1관문", "노말 2관문", "하드 1관문", "하드 2관문") {
         @Override
         public MessageEmbed[] getEmbeds() {
-            return new MessageEmbed[]{};
+            return new MessageEmbed[]{createMessageEmbed("노말 1관 ", "", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("에스더(실리안, 웨이, 바훈투르)", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+                    , createMessageEmbed("노말 2관 ", "", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("에스더(실리안, 웨이, 바훈투르)", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+                    , createMessageEmbed("하드 1관 ", "", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("에스더(실리안, 웨이, 바훈투르)", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+                    , createMessageEmbed("하드 2관 ", "", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("에스더(실리안, 웨이, 바훈투르)", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+            };
         }
 
     }, 비아키스(Color.blue, "목마른 쾌락의 정원", "노말 1관문", "노말 2관문", "하드 1관문", "하드 2관문") {
         @Override
         public MessageEmbed[] getEmbeds() {
-            return new MessageEmbed[]{};
+            return new MessageEmbed[]{createMessageEmbed("노말 1관 ", "", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("에스더(실리안, 웨이, 바훈투르)", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+                    , createMessageEmbed("노말 2관 ", "", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("에스더(실리안, 웨이, 바훈투르)", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+                    , createMessageEmbed("하드 1관 ", "", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("에스더(실리안, 웨이, 바훈투르)", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+                    , createMessageEmbed("하드 2관 ", "", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("에스더(실리안, 웨이, 바훈투르)", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+            };
         }
 
     }, 쿠크세이튼(Color.blue, "한방중의 서커스", "노말 1관문", "노말 2관문", "노말 3관문") {
         @Override
         public MessageEmbed[] getEmbeds() {
-            return new MessageEmbed[]{};
+            return new MessageEmbed[]{createMessageEmbed("노말 1관 ", "", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("에스더(실리안, 웨이, 바훈투르)", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+                    , createMessageEmbed("노말 2관 ", "", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("에스더(실리안, 웨이, 바훈투르)", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+                    , createMessageEmbed("노말 3관 ", "", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("에스더(실리안, 웨이, 바훈투르)", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+            };
         }
 
     }, 아브렐슈드(Color.blue, "몽환의 아스텔지어", "노말 1관문", "노말 2관문", "노말 3관문", "노말 4관문", "하드 1관문", "하드 2관문", "하드 3관문", "하드 4관문") {
         @Override
         public MessageEmbed[] getEmbeds() {
-            return new MessageEmbed[]{};
+            return new MessageEmbed[]{createMessageEmbed("노말 1관 ", "", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("에스더(실리안, 웨이, 바훈투르)", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+                    , createMessageEmbed("노말 2관 ", "", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("에스더(실리안, 웨이, 바훈투르)", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+                    , createMessageEmbed("노말 3관 ", "", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("에스더(실리안, 웨이, 바훈투르)", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+                    , createMessageEmbed("노말 4관 ", "", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("에스더(실리안, 웨이, 바훈투르)", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+                    , createMessageEmbed("하드 1관 ", "", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("에스더(실리안, 웨이, 바훈투르)", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+                    , createMessageEmbed("하드 2관 ", "", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("에스더(실리안, 웨이, 바훈투르)", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+                    , createMessageEmbed("하드 3관 ", "", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("에스더(실리안, 웨이, 바훈투르)", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+                    , createMessageEmbed("하드 4관 ", "", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("에스더(실리안, 웨이, 바훈투르)", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+            };
         }
 
-    }, 일리아칸(Color.blue, "부패한 군주의 판데모니움", "노말 1관문", "노말 2관문", "노말 3관문", "하드 1관문", "하드 2관문", "하드 3관문") {
+    },
+    카양겔(Color.CYAN, "혼돈의 상아탑", "노말/하드 1관", "노말/하드 2관", "노말/하드 3관") {
         @Override
         public MessageEmbed[] getEmbeds() {
-            return new MessageEmbed[]{};
+            return new MessageEmbed[]{createMessageEmbed("노말/하드 1관 ", "https://i.imgur.com/966HLgT.png", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+                    , createMessageEmbed("노말/하드 2관 ", "https://i.imgur.com/VX5DiKs.png", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+                    , createMessageEmbed("노말/하드 3관 ", "https://i.imgur.com/zP1D6ek.png", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+                    , createMessageEmbed("노말/하드 4관 ", "https://i.imgur.com/HAJ1BtN.png", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+            };
+        }
+    }
+    , 일리아칸(Color.blue, "부패한 군주의 판데모니움", "노말 1관문", "노말 2관문", "노말 3관문", "하드 1관문", "하드 2관문", "하드 3관문") {
+        @Override
+        public MessageEmbed[] getEmbeds() {
+            return new MessageEmbed[]{createMessageEmbed("노말 1관 ", "", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("에스더(실리안, 웨이, 바훈투르)", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+                    , createMessageEmbed("노말 2관 ", "", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("에스더(실리안, 웨이, 바훈투르)", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+                    , createMessageEmbed("노말 3관 ", "", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("에스더(실리안, 웨이, 바훈투르)", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+                    , createMessageEmbed("하드 1관 ", "", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("에스더(실리안, 웨이, 바훈투르)", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+                    , createMessageEmbed("하드 2관 ", "", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("에스더(실리안, 웨이, 바훈투르)", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+                    , createMessageEmbed("하드 3관 ", "", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("에스더(실리안, 웨이, 바훈투르)", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+            };
         }
 
-    }, 카멘(Color.blue, "어둠의 바라트론", "노말 1관문", "노말 2관문", "노말 3관문", "하드 1관문", "하드 2관문", "하드 3관문", "하드 4-1관문", "하드 4-2관문") {
+    },
+    상아탑(Color.CYAN, "혼돈의 상아탑", "노말/하드 1관", "노말/하드 2관", "노말/하드 3관", "노말/하드 4관") {
+        @Override
+        public MessageEmbed[] getEmbeds() {
+            return new MessageEmbed[]{createMessageEmbed("노말/하드 1관 ", "https://i.imgur.com/966HLgT.png", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+                    , createMessageEmbed("노말/하드 2관 ", "https://i.imgur.com/VX5DiKs.png", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+                    , createMessageEmbed("노말/하드 3관 ", "https://i.imgur.com/zP1D6ek.png", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+                    , createMessageEmbed("노말/하드 4관 ", "https://i.imgur.com/HAJ1BtN.png", new MessageEmbedFileds() //
+                    .add("", "\nㅤ") //
+                    .add("중요 기믹", "\nㅤ")) //
+            };
+        }
+    }
+    , 카멘(Color.blue, "어둠의 바라트론", "노말 1관문", "노말 2관문", "노말 3관문", "하드 1관문", "하드 2관문", "하드 3관문", "하드 4-1관문", "하드 4-2관문") {
         @Override
         public MessageEmbed[] getEmbeds() {
             return new MessageEmbed[]{createMessageEmbed("노말 1관문 기도하는 자, 킬리네사", "https://i.imgur.com/mlnLy87.png", new MessageEmbedFileds() //
@@ -218,6 +356,7 @@ public enum Info {
             };
         }
     }
+
     //
     ;
     protected final String description;
