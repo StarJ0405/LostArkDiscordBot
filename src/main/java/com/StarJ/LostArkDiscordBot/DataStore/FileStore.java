@@ -1,12 +1,15 @@
 package com.StarJ.LostArkDiscordBot.DataStore;
 
 import net.dv8tion.jda.api.JDA;
-import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class FileStore {
     public String getToken() {
@@ -45,7 +48,8 @@ public class FileStore {
                 }
             }
             InputStream fileInputStream = new FileInputStream(file);
-            Workbook workbook = WorkbookFactory.create(Objects.requireNonNull(fileInputStream));
+            //Workbook workbook = WorkbookFactory.create(Objects.requireNonNull(fileInputStream));
+            XSSFWorkbook workbook = new XSSFWorkbook(fileInputStream);
             // SETTING
             Sheet settingSheet = workbook.getSheet("SETTING");
             JDA jda = MemoryStore.createJda(getToken());
@@ -58,7 +62,7 @@ public class FileStore {
                     if (cell.getCellType().equals(CellType.STRING))
                         list.add(cell.getStringCellValue());
                 if (list.size() > 1)
-                    MemoryStore.addReaction(list.get(0).replace(" ",""), list.subList(1, list.size()).toArray(String[]::new));
+                    MemoryStore.addReaction(list.get(0).replace(" ", ""), list.subList(1, list.size()).toArray(String[]::new));
             }
 
             // RANDOM_REACTION
