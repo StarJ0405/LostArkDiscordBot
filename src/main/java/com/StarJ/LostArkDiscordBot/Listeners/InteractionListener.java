@@ -48,7 +48,7 @@ public class InteractionListener extends ListenerAdapter {
             break;
             case "info":{
                 List<MessageStore.StringSelect> list = new ArrayList<>();
-                for(Info info : Info.getCommander())
+                for(Info info : Info.군단장레이드())
                     list.add(MessageStore.StringSelect.getInfo(info));
                 StringSelectMenu commnaderMenu = MessageStore.getStringSelectMenu("commander","군단장 정보를 검색하기",list.toArray(MessageStore.StringSelect[]::new));
                 event.reply("").addActionRow(commnaderMenu).setEphemeral(true).queue();
